@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" type="text/css" th:href="@{webjars/bootstrap/css/bootstrap.min.css}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+  <link rel="stylesheet" th:href="@{/css/home.css}">
+    <title>About</title>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-container ">
+    <div class="container-fluid ">
+        <!--Toggle button for mobile Nav-->
+        <button class="navbar-toggler navbar-light " type="button " data-bs-toggle="collapse " data-bs-target="#main-nav " aria-controls="main-nav " aria-expanded="false " aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+        <!--Navbar Links-->
+        <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link active " aria-current="page " th:href="@{/registration}"><i class="bi bi-house-fill "></i> <strong>Zesco Issue Tracker</strong> </a>
+            </li>
+                <li class="nav-item ">
+                    <a class="nav-link active " aria-current="page " th:href="@{/registration}"><i class="bi bi-house-fill "></i>Registration</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link active " aria-current="page " th:href="@{/about}"><i class="bi bi-house-fill "></i>About</a>
+              </li>
+              <li class="nav-item ">
+                <a th:href="@{/logout}" class="btn btn-dark">SignOut</a><br>
+            </li>
+              
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="text-align: center;">
+  <h2 style=" padding-top: 30px;;"><strong>Java Practical assignment</strong></h2>
+  <p style="text-align: center; padding: 0 10% 0 10%;" >
+    You have recently being recruited by Zesco Plc. as their in-house Software Developer in charge of custom business development and automation. Your first assignment is to develop an Issue Tracking App which will be used by inspectors to track equipment issues as they go out for inspection in the field. The app should track Equipment details, details of the Inspector who was carrying out the inspection, state of the equipment i.e. good or bad, details of the Supervisor to provide a comment on the inspection. 
+    The users to access should have two roles one for inspector and the other one for the supervisor. The idea is that once an inspector provides inspection details i.e. “the transformer in Riverside is very low on fuel”, the supervisor can provide feedback at a later time on it e.g. “this needs to be worked on as soon as possible”
+    </p>
+    <h2>Lecturer : Mr Chibuluma Matthews</h2>
+    <h2 style=" padding-top: 30px;"><strong>About Developer</strong></h2>
+</div>
+
+
+  <div class="card" style="width: 20rem;" >
+    <img th:src="@{images/works.jpg}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Name: Basswell Mbilima</h5>
+      <h5 class="card-title">SIN:19136022</h5>
+      <p class="card-text">Skills- Java, C++, PHP,JavaScript, SQL, HTML, CSS, Springboot, Bootstrap</p>
+      <a th:href="@{/dashboard}" class="btn btn-success">Dashboard</a>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>

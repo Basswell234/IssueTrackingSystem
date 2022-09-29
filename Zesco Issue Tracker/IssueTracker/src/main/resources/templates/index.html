@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type="text/css" th:href="@{webjars/bootstrap/css/bootstrap.min.css}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-container ">
+    <div class="container-fluid ">
+        <!--Toggle button for mobile Nav-->
+        <button class="navbar-toggler navbar-light " type="button " data-bs-toggle="collapse " data-bs-target="#main-nav " aria-controls="main-nav " aria-expanded="false " aria-label="Toggle navigation ">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+        <!--Navbar Links-->
+        <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav ">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ">
+                <a class="nav-link active " aria-current="page " th:href="@{/registration}"><i class="bi bi-house-fill "></i> <strong>Zesco Issue Tracker</strong> </a>
+            </li>
+                <li class="nav-item ">
+                  <a class="nav-link active " aria-current="page " th:href="@{/about}"><i class="bi bi-house-fill "></i>About</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  
+<br><div class="text-center"><h1>ZESCO ISSUE TRACKING SYSTEM</h1></div><br>
+
+     <div class="d-flex text-center justify-content-evenly"> 
+      <!-- <div class="container bg-light text-center"> -->
+      <div class="card" style="width: 18rem;">
+       <img th:src="@{images/dashboard.jpg}" class="card-img-top" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Dashboard</h5>
+         <p class="card-text">View your dash board and all the users that have been signed up fo the app.</p>
+         <a th:href="@{/dashboard}" class="btn btn-success">Dashboard</a>
+       </div>
+     </div>
+     <div class="card" style="width: 18rem;">
+       <img th:src="@{images/registration.jpg}" class="card-img-top" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Registration</h5>
+         <p class="card-text">Create an account on the system that you can use to keep track of issues.</p>
+         <a th:href="@{/registration}" class="btn btn-warning">Register</a>
+       </div>
+     </div>
+
+     <div class="card" style="width: 18rem;">
+       <img th:src="@{images/login1.jpg}" class="card-img-top" alt="...">
+       <div class="card-body">
+         <h5 class="card-title">Login</h5>
+         <p class="card-text">Get redirected to the login page where you can sign into you account</p>
+         <a th:href="@{/login}" class="btn btn-primary">Login</a>
+       </div>
+     <!-- </div> -->
+     </div>
+</body>
+</html>

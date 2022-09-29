@@ -1,0 +1,167 @@
+/* Navigation and header*/
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(15, 129, 0, 0.767);
+    height: 50px;
+    padding: 20px 30px;
+}
+
+.row{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-top{
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    text-align: right;
+}
+
+.navbar-container {
+    background-color: rgb(32, 174, 4);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(9, 51, 238);
+    font-size: larger;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li a:hover {
+    color: rgb(196, 96, 8);
+    left: 20px;
+}
+
+.registrationheader {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+/* Customer Signup*/
+
+.innercontainer {
+    width: 1200px;
+    height: 700px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 8% auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.innercontainer input {
+    margin-bottom: 30px;
+}
+
+.navbar-container {
+    background-color: rgb(149, 236, 131);
+}
+
+.innercontainer h1 {
+    text-align: center;
+    color: rgb(130, 214, 5)
+}
+/*carousel section*/
+
+.carouselSectionContainer{
+    padding-bottom: 30px;
+}
+.carouselSection {
+ 
+    height: 500px;
+}
+
+/*product display section*/
+
+.productsection h2 {
+    justify-content: left;
+    margin: 0;
+    background: rgb(155, 238, 122);
+    color: rgb(230, 59, 139);
+    width: 370px;
+    height: 40px;
+}
+
+.container{
+    width: 75%;
+
+    
+}
+
+.col-md-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    
+}
+.overlay button{
+    margin-right: 8px;
+}
+
+
+
+.vegitables h2 {
+    background: rgb(155, 238, 122);
+    color: rgb(230, 59, 139);
+    width: 370px;
+    height: 40px;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+
+
+/*accordionSection*/
+
+.accordionSection h2 {
+    color: red;
+}
+
+.accordionSection strong {
+    text-decoration: underline;
+}
+
+.accordionSection p {
+    color: green;
+    font-size: larger;
+}
+
+
+/*footer*/
+
+.footing {
+    color: blue;
+    background-color: rgb(196, 238, 132);
+}
+
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* centering a div*/
+.form-center{
+    display: flex;
+    justify-content: center;
+}
